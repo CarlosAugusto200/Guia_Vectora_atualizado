@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pontos turisticos - Vectora</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.jpeg">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="logo">
+            <h1>Vectora</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="pontos.html">Pontos-Turísticos</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="curiosidades.html">Curiosidades</a></li>
+                <li><a href="Itinerário.html">Itinerário</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Explore os nossos principais pontos turisticos</h2>
+            <p>Clique em "Avaliar este Ponto" para deixar seu comentário de forma individual.</p>
+            
+            <div class="grid-container">
+                
+                <div class="card">
+                    <img src="assets/castelo.jpeg" alt="Castelo Vectorios">
+                    <h3>Castelo Vectorios</h3>
+                    <p>A imensa morada do arquimago,quase uma cidade á parte, proximo as montanhas ao norte</p>
+                    
+                    <button type="button" class="btn-avaliar" onclick="toggleForm(this)">Avaliar este Ponto</button>
+                    
+                    <form class="mini-form" onsubmit="salvarComentario(event, this)">
+                        <div class="form-group">
+                            <label>Seu Nome:</label>
+                            <input type="text" name="nome" placeholder="Digite seu nome" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Comentário:</label>
+                            <textarea name="comentario" rows="3" placeholder="O que você achou do Jardim Botânico?" required></textarea>
+                        </div>
+                        <button type="submit">Salvar Comentário</button>
+                    </form>
+                </div>
+
+                <div class="card">
+                    <img src="assets/estatua.jpeg" alt="Estatua de Vectorios">
+                    <h3>Estátua de Vectorios</h3>
+                    <p>Estátua erguida no centro da cidade para homenagear o fundador e prefeito de vectoria </p>
+                    
+                    <button type="button" class="btn-avaliar" onclick="toggleForm(this)">Avaliar este Ponto</button>
+                    
+                    <form class="mini-form" onsubmit="salvarComentario(event, this)">
+                        <div class="form-group">
+                            <label>Seu Nome:</label>
+                            <input type="text" name="nome" placeholder="Digite seu nome" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Comentário:</label>
+                            <textarea name="comentario" rows="3" placeholder="O que você achou da Torre Central?" required></textarea>
+                        </div>
+                        <button type="submit">Salvar Comentário</button>
+                    </form>
+                </div>
+
+                <div class="card">
+                    <img src="assets/magus.jpeg" alt="Bairro Magus">
+                    <h3>Bairro Magus</h3>
+                    <p>Bairro noroeste, especializado em produtos alquimicos, componentes para magias e itens magicos.</p>
+                    
+                    <button type="button" class="btn-avaliar" onclick="toggleForm(this)">Avaliar este Ponto</button>
+                    
+                    <form class="mini-form" onsubmit="salvarComentario(event, this)">
+                        <div class="form-group">
+                            <label>Seu Nome:</label>
+                            <input type="text" name="nome" placeholder="Digite seu nome" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Comentário:</label>
+                            <textarea name="comentario" rows="3" placeholder="O que você achou da Praça Central?" required></textarea>
+                        </div>
+                        <button type="submit">Salvar Comentário</button>
+                    </form>
+                </div>
+
+                <div class="card">
+                    <img src="assets/bara.jpeg" alt="Bairro bara">
+                    <h3>Bairro Bara</h3>
+                    <p>Bairro nordeste, especializado em cultura e entreterimento, com artesãos bardos, livrarias e tarvernas.</p>
+                    
+                    <button type="button" class="btn-avaliar" onclick="toggleForm(this)">Avaliar este Ponto</button>
+                    
+                    <form class="mini-form" onsubmit="salvarComentario(event, this)">
+                        <div class="form-group">
+                            <label>Seu Nome:</label>
+                            <input type="text" name="nome" placeholder="Digite seu nome" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Comentário:</label>
+                            <textarea name="comentario" rows="3" placeholder="O que você achou da Praça Central?" required></textarea>
+                        </div>
+                        <button type="submit">Salvar Comentário</button>
+                    </form>
+                </div>
+
+                <div class="card">
+                    <img src="assets/mucro.jpeg" alt="Bairro mucro">
+                    <h3>Bairro Mucro</h3>
+                    <p>Bairro sudoeste, famoso por armas, armaduras e equipamento para aventuras em geral.</p>
+                    
+                    <button type="button" class="btn-avaliar" onclick="toggleForm(this)">Avaliar este Ponto</button>
+                    
+                    <form class="mini-form" onsubmit="salvarComentario(event, this)">
+                        <div class="form-group">
+                            <label>Seu Nome:</label>
+                            <input type="text" name="nome" placeholder="Digite seu nome" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Comentário:</label>
+                            <textarea name="comentario" rows="3" placeholder="O que você achou da Praça Central?" required></textarea>
+                        </div>
+                        <button type="submit">Salvar Comentário</button>
+                    </form>
+                </div>
+
+                <div class="card">
+                    <img src="assets/numen.jpeg" alt="Bairro Numen">
+                    <h3>Bairro Numen</h3>
+                    <p>Bairro sudeste, especializado em produtos de oigem animal ou vegetal, desde peles e ervas até animais e monstros vivos.</p>
+                    
+                    <button type="button" class="btn-avaliar" onclick="toggleForm(this)">Avaliar este Ponto</button>
+                    
+                    <form class="mini-form" onsubmit="salvarComentario(event, this)">
+                        <div class="form-group">
+                            <label>Seu Nome:</label>
+                            <input type="text" name="nome" placeholder="Digite seu nome" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Comentário:</label>
+                            <textarea name="comentario" rows="3" placeholder="O que você achou da Praça Central?" required></textarea>
+                        </div>
+                        <button type="submit">Salvar Comentário</button>
+                    </form>
+                </div>
+
+                <div class="card">
+                    <img src="assets/praca_entrada.jpeg" alt="Praça de entrada">
+                    <h3>Praça de Entrada</h3>
+                    <p>Ponto inicial de sua visita, pancas de informações e postos da guarda são encontradas aqui.</p>
+                    
+                    <button type="button" class="btn-avaliar" onclick="toggleForm(this)">Avaliar este Ponto</button>
+                    
+                    <form class="mini-form" onsubmit="salvarComentario(event, this)">
+                        <div class="form-group">
+                            <label>Seu Nome:</label>
+                            <input type="text" name="nome" placeholder="Digite seu nome" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Comentário:</label>
+                            <textarea name="comentario" rows="3" placeholder="O que você achou da Praça Central?" required></textarea>
+                        </div>
+                        <button type="submit">Salvar Comentário</button>
+                    </form>
+                </div>
+
+                <div class="card">
+                    <img src="assets/hospital.jpeg" alt="Hospital litúrgico">
+                    <h3>Hospital litúrgico</h3>
+                    <p>Diferente doque o nome sugere. aqui se encontrar tratamentos e curas dos mais diversos tipos: magicos, mundanos ou misticos.</p>
+                    
+                    <button type="button" class="btn-avaliar" onclick="toggleForm(this)">Avaliar este Ponto</button>
+                    
+                    <form class="mini-form" onsubmit="salvarComentario(event, this)">
+                        <div class="form-group">
+                            <label>Seu Nome:</label>
+                            <input type="text" name="nome" placeholder="Digite seu nome" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Comentário:</label>
+                            <textarea name="comentario" rows="3" placeholder="O que você achou da Praça Central?" required></textarea>
+                        </div>
+                        <button type="submit">Salvar Comentário</button>
+                    </form>
+                </div>
+
+                <div class="card">
+                    <img src="assets/pier.jpeg" alt="Praça Central">
+                    <h3>Pier de Ancoragem</h3>
+                    <p>Ponto de conexão entre os bondes com a cidade, a tambem locais de pouso para aeronaves privadas.</p>
+                    
+                    <button type="button" class="btn-avaliar" onclick="toggleForm(this)">Avaliar este Ponto</button>
+                    
+                    <form class="mini-form" onsubmit="salvarComentario(event, this)">
+                        <div class="form-group">
+                            <label>Seu Nome:</label>
+                            <input type="text" name="nome" placeholder="Digite seu nome" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Comentário:</label>
+                            <textarea name="comentario" rows="3" placeholder="O que você achou da Praça Central?" required></textarea>
+                        </div>
+                        <button type="submit">Salvar Comentário</button>
+                    </form>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Guia Turístico de Vectora. Desenvolvido para a disciplina de Desenvolv. Web I.</p>
+    </footer>
+
+    <script>
+        // Abre e fecha o formulário apenas do Card clicado
+        function toggleForm(botao) {
+            const card = botao.closest('.card');
+            card.classList.toggle('active');
+        }
+
+        // Processa o salvamento de forma local (sem recarregar a página)
+        function salvarComentario(event, formulario) {
+            event.preventDefault(); // Remove o comportamento padrão de atualizar a página
+            
+            const nome = formulario.querySelector('input[name="nome"]').value;
+            
+            // Mensagem de sucesso confirmando a ação
+            alert(`Obrigado, ${nome}! Seu comentário foi enviado com sucesso.`);
+            
+            // Limpa os campos do formulário para uma próxima utilização
+            formulario.reset();
+            
+            // Fecha o formulário removendo a classe do card correspondente
+            const card = formulario.closest('.card');
+            card.classList.remove('active');
+        }
+    </script>
+
+</body>
+</html>
